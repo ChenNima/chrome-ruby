@@ -12,8 +12,6 @@ elsif OS.windows?
   ENV['PATH'] += "#{File::PATH_SEPARATOR}#{base}/windows"
 end
 
-binding.pry
-
 options = Selenium::WebDriver::Chrome::Options.new()
 # options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
 
