@@ -1,0 +1,41 @@
+GEM
+  specs:
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    childprocess (0.8.0)
+      ffi (~> 1.0, >= 1.0.11)
+    coderay (1.1.0)
+    debug_inspector (0.0.2)
+    ffi (1.9.8)
+    method_source (0.8.2)
+    os (1.0.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.8.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  os (~> 1.0)
+  pry (= 0.10.1)
+  pry-nav
+  pry-rails (= 0.3.2)
+  pry-stack_explorer
+  selenium-webdriver
+
+BUNDLED WITH
+   1.16.0
