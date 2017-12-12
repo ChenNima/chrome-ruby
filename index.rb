@@ -9,7 +9,7 @@ if OS.mac?
 elsif OS.linux?
   ENV['PATH'] += "#{File::PATH_SEPARATOR}#{base}/linux"
 elsif OS.windows?
-  ENV['PATH'] += "#{File::PATH_SEPARATOR}#{base}/linux"
+  ENV['PATH'] += "#{File::PATH_SEPARATOR}#{base}/windows"
 end
 
 binding.pry
