@@ -1,3 +1,5 @@
+source 'https://rubygems.org'
+
 gem 'os', '~> 1.0'
 gem 'selenium-webdriver'
 gem 'pry', '0.10.1'
