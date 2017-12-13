@@ -1,5 +1,6 @@
 const ncp = require('ncp').ncp;
 const removeRecursive = require('rimraf');
+const fs = require('fs');
 
 removeRecursive('./chrome', function() {
   const revision = require('./node_modules/puppeteer/package').puppeteer.chromium_revision;
@@ -10,6 +11,9 @@ removeRecursive('./chrome', function() {
    if (err) { 
      return console.error(err);
    }
-   console.log('done!');
+   if (platform === 'linux') {
+     fs.symlink('./chrome/chrome', './chrome/google-chrome', function() {});
+   }
+   console.log('done');
   });
 });
