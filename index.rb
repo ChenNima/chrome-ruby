@@ -14,6 +14,8 @@ end
 
 ENV['PATH'] += "#{File::PATH_SEPARATOR}#{Dir.pwd}/chrome"
 
+binding.pry
+
 # options = Selenium::WebDriver::Chrome::Options.new()
 options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
 
