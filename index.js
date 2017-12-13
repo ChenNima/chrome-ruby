@@ -1,10 +1,12 @@
-const puppeteer = require('puppeteer');
+var puppeteer = require('puppeteer');
+console.log('import puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless: false});
+  console.log('start chrome');
+  const browser = await puppeteer.launch();
+  console.log('start getting page');
   const page = await browser.newPage();
   await page.goto('http://stackoverflow.com/');
-  console.log(page);
   // const content = await page.content();
   const title = await page.title();
   console.log(title);
