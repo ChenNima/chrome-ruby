@@ -13,7 +13,7 @@ removeRecursive('./chrome', function() {
      return console.error(err);
    }
    if (platform === 'linux') {
-     fs.symlink(path.join(__dirname, 'chrome', 'chrome'), path.join(__dirname, 'chrome', 'google-chrome'), function() {});
+     fs.symlink(path.join(__dirname, 'chrome', 'chrome'), path.join('/usr/bin', 'google-chrome'), function() {});
    }
    console.log('done');
   });
